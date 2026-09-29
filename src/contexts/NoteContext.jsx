@@ -10,7 +10,7 @@ export function NoteProvider({ children }) {
     const [notes, setNotes] = useState([])
     // fetches
     const { data } = useFetchData(API_URL)
-    const { execute: updateNote } = useFetchDataMutation(API_URL)
+    const { execute: changeNote } = useFetchDataMutation(API_URL)
 
     // load notes on mount
     useEffect(() => {
@@ -20,7 +20,7 @@ export function NoteProvider({ children }) {
     // add notes
     async function addNote(note) {
         // call mutated fetch with post
-        const savedNote = await updateNote({
+        const savedNote = await changeNote({
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(note)
@@ -39,7 +39,7 @@ export function NoteProvider({ children }) {
     // delete notes
     async function deleteNote(noteToDelete) {
         // call mutated fetch, pointing dynamic url to /id
-        const response = await updateNote({
+        const response = await changeNote({
             method: "DELETE"
         }, `${API_URL}/${noteToDelete.id}`)
         // if null response, update inventory state, otherwise report error
@@ -60,7 +60,7 @@ export function NoteProvider({ children }) {
     // update notes
     async function updateNote(noteToUpdate) {
         // call mutated fetch, pointing to dynamic url /id
-        const updatedNote = await updateNote({
+        const updatedNote = await changeNote({
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(noteToUpdate)
