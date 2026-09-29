@@ -42,8 +42,8 @@ export function NoteProvider({ children }) {
         const response = await changeNote({
             method: "DELETE"
         }, `${API_URL}/${noteToDelete.id}`)
-        // if null response, update inventory state, otherwise report error
-        if (!response) {
+        // if null response, or response matching target, update inventory state, otherwise report error
+        if (!response || response.id === noteToDelete.id) {
             setNotes(prev => {
                 const currentArray = Array.isArray(prev) ? prev : []
                 return currentArray.filter(note => (

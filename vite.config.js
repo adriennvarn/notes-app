@@ -8,4 +8,10 @@ export default defineConfig({
         react(),
         tailwindcss()
     ],
+    server: {
+        watch: {
+            // Tell Vite to never reload the page when db.json updates
+            ignored: ['**/db.json'],
+        },
+    },
 })

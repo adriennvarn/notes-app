@@ -9,6 +9,8 @@ lerna-debug.log*
 
 # personal
 NOTES
+db.json
+db.json.bak
 
 node_modules
 dist

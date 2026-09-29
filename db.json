@@ -1,5 +1,40 @@
 {
     "notes": [
-        
+        {
+            "id": 1,
+            "title": "Grocery List",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Pick up milk, eggs, whole wheat bread, almonds, and coffee beans from the store."
+        },
+        {
+            "id": 2,
+            "title": "Project Ideas",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Brainstorming a mobile app for tracking plant watering schedules with custom push notifications."
+        },
+        {
+            "id": 3,
+            "title": "Meeting Notes",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Discussed Q4 goals with the team. Sarah to finish the UI wireframes by next Friday."
+        },
+        {
+            "id": 4,
+            "title": "Book Recommendations",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Check out 'Project Hail Mary' by Andy Weir and 'Atomic Habits' by James Clear."
+        },
+        {
+            "id": 5,
+            "title": "Workout Routine",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Monday: Push Day. Wednesday: Pull Day. Friday: Legs and Core. Remember to stretch after."
+        },
+        {
+            "id": 6,
+            "title": "Recipe Link",
+            "date_edited": "2026-09-29T16:39:00.000Z",
+            "content": "Look up the 15-minute garlic chili noodles recipe for dinner tonight."
+        }
     ]
 }
