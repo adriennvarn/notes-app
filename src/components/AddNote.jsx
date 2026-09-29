@@ -16,6 +16,7 @@ export default function AddNote() {
     // input ref for focusing on title
     const inputRef = useRef(null)
 
+    // update state and values on change
     const handleChange = (e) => {
         const { name, value } = e.target
         setNewNote((prevData) => ({

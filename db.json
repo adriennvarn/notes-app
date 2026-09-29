@@ -31,16 +31,10 @@
       "content": "Look up the 15-minute garlic chili noodles recipe for dinner tonight."
     },
     {
-      "id": "vcM9RTEhrfQ",
+      "id": "ZbRcKpcLtt8",
       "title": "Test title",
       "content": "test content",
-      "date_edited": "2026-09-29T18:58:40.374Z"
-    },
-    {
-      "id": "nike1vDKFGQ",
-      "title": "fdsa",
-      "content": "test content",
-      "date_edited": "2026-09-29T18:59:12.881Z"
+      "date_edited": "2026-09-29T19:03:48.359Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

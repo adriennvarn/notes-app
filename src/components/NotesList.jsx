@@ -5,10 +5,11 @@ import { NoteContext } from "../contexts/NoteContext"
 export default function NotesList() {
     const { notes } = useContext(NoteContext)
 
+    // TODO: sort notes by date edited by default
     return (
         <>
             <h2>Notes List</h2>
-            {notes.map(note => (
+            {notes.toReversed().map(note => (
                 <NoteCard key={note.id} note={note} />
             ))}
         </>
